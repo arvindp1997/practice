@@ -13,3 +13,17 @@ localStorage.removeItem('email')
 sessionStorage.setItem('name','John')
 console.log(sessionStorage.getItem('name'))
 sessionStorage.removeItem('name')
+
+//storing users object in local storage
+let myObj = {
+ name : "aravind" ,
+age : 24
+};
+
+let myObj_serialized = JSON.stringify(myObj);
+
+localStorage.setItem("myObj",myObj_serialized);
+
+let myObj_deserialized = JSON.parse(localStorage.getItem("myObj"));
+
+console.log(myObj_deserialized);
