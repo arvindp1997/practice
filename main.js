@@ -87,3 +87,26 @@ function filterItems(e){
 
    
 
+// Deep about Event Listeners
+
+//Closure demo with event Listeners
+
+//Scope Demo with Event Listeners
+
+//Garbage Collection & removeEventListeners
+
+function attachEventListeners() {
+    let count=0;
+    document.getElementById("Clickme")
+    .addEventListener("click",function xyz(){
+    console.log("button clicked",++count);
+    });
+}
+
+attachEventListeners();
+
+document.addEventListener('DOMContentLoaded', init);
+
+function init() {
+	console.log('The page successfully loaded!');
+}
