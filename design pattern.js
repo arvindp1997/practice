@@ -52,13 +52,16 @@ const Student5= new Student('abhishek','25','424242323424',76);
 CheckEligible(Student1);
 CheckEligible(Student2);
 
-let EligibleforPlacements = (marks) =>{ if(marks > 60) return true; else return false;}
+let EligibleforPlacements = (student) =>{ if(student.marks > 60) return true; else return false;}
  
-
+// for loop not required - check for individual students
 for(let i=1;i<=5;i++)
-{ const stu=eval(`Student${i}`);
-//console.log(stu);
-    if(EligibleforPlacements(stu.marks> 50))
+{ const stu=`Student${i}`;
+console.log(stu);
+console.log(EligibleforPlacements(stu));
+    if(EligibleforPlacements(stu) )
     console.log(stu.name);
+    else
+    console.log('not eligible for placement');
 }
                                              

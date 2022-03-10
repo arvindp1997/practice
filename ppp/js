@@ -1,0 +1,36 @@
+
+import {}
+
+
+const booleans=condition
+const res=booleans?2:-1;
+const [ test,upDate ]=useState(res);
+
+
+
+const ans={
+     return <p> </p>
+}
+
+[state1 ,state2 ,state3]
+
+const arr=[1,2,3,4,5];
+
+function (arr){
+ 
+}
+
+
+for (let i = 1; i < 5; ++i) {
+    setTimeout(function () {
+        console.log(i);
+    }, 1000);
+}
+console.log('The loop is done!');
+
+
+
+string solution(string str){
+
+    
+}
